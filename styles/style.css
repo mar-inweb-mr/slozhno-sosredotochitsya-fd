@@ -1,5 +1,213 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-color: var(--bg-color, #000028);
+  font-family: var(--main-font, "IBM Plex mono"), sans-serif;
+  background-image: var(--bg-image, url(../images/cover-image-dark.png));
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: var(--main-font-size, 1.125rem);
 }
+
+.header__rec-abs {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 48px;
+  color: var(--accent-color, #FF0070);
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 25px;
+  white-space: nowrap;
+}
+
+.header__rec-abs::after {
+  content: '•'; 
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.theme-dark .header__rec-abs {
+  display: inline-block;
+}
+
+.header__decorative-corner {
+  content: '';
+  width: 25px; 
+  height: 25px; 
+  background-color: transparent; 
+  border-top: 1px solid var(--border-color, #FF0070); 
+  border-right: 1px solid var(--border-color, #FF0070); 
+  position: absolute;
+}
+
+.header__decorative-corner--top-right {
+  top: 1px;
+  right: 1px;
+}
+
+.header__decorative-corner--bottom-left {
+  bottom: 1px;
+  left: 1px;
+  transform: rotate(180deg);
+}
+
+.header__theme-menu {
+   justify-self: center;
+   align-self: center;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  display: flex;
+  color: var(--decoration-color, #FF0070);
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  font-family:"IBM Plex mono", sans-serif;
+  border: 1px transparent solid;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.header__theme-menu-button :active {
+  border: 1px solid var(--decoration-color);
+  pointer-events: none;
+}
+
+.header__theme-menu-button :hover {
+  border: 1px solid rgba (var(--decoration-rgb-color), 0.4);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--decoration-color);
+}
+
+.title {
+  color: var(--title-color, #DB00FF);
+  font-weight: 700;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  line-height: 83%;
+  text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
+}
+
+.header-title {
+  justify-self: left;
+  padding: 200px 265px 190px 0;
+}
+
+.header__paragraph {
+  justify-self: end;
+  font-size: 18px;
+  font-weight: 700;
+  line-height:23,4px;
+  font-family:"IBM Plex mono", sans-serif;
+  max-inline-size: 491px;
+  margin-top: 10px;
+  margin-bottom: 130px;
+  margin-right: 20px;
+}
+
+.title-decor {
+  color: var(--title-decor, #000028);
+  background-color: var(--title-decor, #FF0070) 
+}
+
+.content-section {
+  display: flex;
+  flex-direction: row;
+  margin-block: var(--content-margin-block);
+  gap: 20px;
+}
+
+.content-section >  {
+  flex: 1;
+}
+
+.card-title {
+  color: var(--card-title,#FF0070);
+  font-size: 18px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-text {
+  color: var(--card-text, #F1B2CE);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.content-section_reasons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex: 1;
+}
+
+.main__section-title {
+  color: var(--card-title,#FF0070);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.gallery_content-section {
+  display: grid;
+  gap: 10px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+
+
+.footer {
+  
+} 
+
+.footer-title {
+  color: var(--title-color, #DB00FF);
+  font-weight: 700;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  line-height: 83%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+
