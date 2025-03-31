@@ -319,7 +319,21 @@
     flex-direction: column;
     gap: 5px;
     padding-top: 146px;
-    padding-right: 20px;
+  }
+
+  .header__decorative-corner--top-right {
+    top: 20px;
+    right: 10px;
+  }
+  
+  .header__decorative-corner--bottom-left {
+    bottom: 10px;
+    left: 10px;
+    transform: rotate(180deg);
+  }
+
+  .title-decor {
+    margin-left: 10px;
   }
 
   .title {
@@ -327,13 +341,14 @@
   }
   
   .header-title {
-    padding: 240px 190px 162px 0;
+    padding: 290px 190px 162px 0;
   }
 
   .title-decor {
     max-width: 364px;
   }
   
+  .content-section,
   .content-section_reasons, 
   .main__content-section {
     margin-left: 20px;
@@ -344,6 +359,8 @@
     margin-left: 20px;
     margin-right: 20px;
   }
+
+
 
 }
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
