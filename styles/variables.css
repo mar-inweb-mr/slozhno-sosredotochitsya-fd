@@ -11,14 +11,36 @@
 }
 
 :root.theme-dark {
-  /* Дублируем переменные для тёмной темы */
+  --bg-color: #000028;
+  --subtitle-color: #000028;
+  --heading-color: #db00ff;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --button-color: #ff0070;
+  --color-transparent: rgba(255, 0, 112, 0.4);
+  --bg-image: url(../images/cover-image-dark.png);
+  --hover-border-color: #ff0070;
+  --title-decor-color: #000028;
+  --border-color: #ff0070;
+  --title-text-color: #ff0070;/* Дублируем переменные для тёмной темы */
 }
 
 /* Остальные стили, только при необходимости */
 
 
 :root.theme-light {
-  /* Переменные светлой темы */    
+  --bg-color: #fff1f7;
+  --bg-image: url(../images/cover-image-light.png);
+  --title-decor-color: #353430;
+  --content__section-title-color: #353430;
+  --accent-color: #ff8dcb;
+  --title-color: #ffc2e6;
+  --main-font-color: #353430;
+  --decor-color: #353430;
+  --hover-border-color: rgba(50 49 45/ 0.4);
+  --button-color: #353430;
+  --border-color: #353430;
+  --title-text-color: #353430;/* Переменные светлой темы */    
 }
 
 /* Остальные стили, только при необходимости */
