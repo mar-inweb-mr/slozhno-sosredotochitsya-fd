@@ -269,7 +269,6 @@
   object-fit: cover;
 }
 
-
 .footer {
   position: relative;
   display: grid;
@@ -346,13 +345,6 @@
     margin-right: 20px;
   }
 
-  .footer {
-    block-size: auto;
-  }
-
 }
-
-
-
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 
