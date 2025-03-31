@@ -44,8 +44,8 @@
   width: 25px; 
   height: 25px; 
   background-color: transparent; 
-  border-top: 1px solid var(--border-color, #FF0070); 
-  border-right: 1px solid var(--border-color, #FF0070); 
+  border-top: 1px solid var(--border-color); 
+  border-right: 1px solid var(--border-color); 
   position: absolute;
 }
 
@@ -73,7 +73,7 @@
 
 .header__theme-menu-button {
   display: inline-flex;
-  color: var(--decoration-color, #FF0070);
+  color: var(--button-color);
   background-color: transparent;
   font-size: 18px;
   font-weight: 400;
@@ -85,23 +85,21 @@
   margin-top: 20px;
 }
 
-.header__theme-menu-button_active {
-  border: 1px solid var(--decoration-color);
+.header__theme-menu-button.header__theme-menu-button_active {
   pointer-events: none;
 }
 
-.header__theme-menu-button :hover {
-  border: 1px solid var(--decoration-color, #FF0070);
-  padding: 2px;
+.header__theme-menu-button:hover {
+  border: 1px var(--hover-border-color) solid;
 }
 
 .header__theme-menu-button:focus {
-  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--hover-border-color);
 }
 
 .header__theme-menu-button:focus-visible {
-  outline: none;
-  text-decoration: underline;
+  border-bottom: 1px var(--button-color) solid;
 }
 
 .title {
@@ -130,8 +128,8 @@
 }
 
 .title-decor {
-  color: var(--title-decor, #000028);
-  background-color: var(--title-decor, #FF0070) 
+  color: var(--title-decor-color);
+  background-color: var(--accent-color); 
 }
 
 .content-section {
@@ -147,7 +145,7 @@
 }
 
 .card-title {
-  color: var(--card-title,#FF0070);
+  color: var(--title-text-color);
   font-size: 18px;
   font-weight: 700;
   white-space: nowrap;
@@ -166,7 +164,7 @@
 }
 
 .card-text {
-  color: var(--card-text, #F1B2CE);
+  color: var(--text-color, #353430);
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -194,20 +192,20 @@
 }
 
 .main__section-title {
-  color: var(--card-title,#FF0070);
+  color: var(--title-text-color);
   font-size: 18px;
   font-weight: 700;
   white-space: nowrap;
 }
 
 .title-decor__text {
-  color: var(--title-decor__text, #000028);
-  background-color: var(--title-decor__text, #FF0070);
+  color: var(--title-decor-color);
+  background-color: var(--accent-color);
 }
 
 .title-decor_decor {
-  color: var(--title-decor__decor, #000028);
-  background-color: var(--title-decor__decor, #FF0070);
+  color: var(--title-decor-color);
+  background-color: var(--accent-color);
   font-weight: 400;
 }
 
@@ -217,8 +215,8 @@
 }
 
 .title-decor_gallery {
-  color: var(--title-decor__decor, #000028);
-  background-color: var(--title-decor__decor, #FF0070);
+  color: var(--title-decor-color);
+  background-color: var(--accent-color);
   font-weight: 700;
   margin-top: 80px;
   max-inline-size: 1444px;

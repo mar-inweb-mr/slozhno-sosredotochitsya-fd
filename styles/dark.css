@@ -14,9 +14,13 @@
   --heading-color: #db00ff;
   --text-color: #f1b2ce;
   --accent-color: #ff0070;
-  --botton-color: #ff0070;
+  --button-color: #ff0070;
   --color-transparent: rgba(255, 0, 112, 0.4);
   --bg-image: url(../images/cover-image-dark.png);
+  --hover-border-color: #ff0070;
+  --title-decor-color: #000028;
+  --border-color: #ff0070;
+  --title-text-color: #ff0070;
 }
 
 .theme-dark .page {
@@ -29,4 +33,5 @@
   --botton-color: #ff0070;
   --color-transparent: rgba(255, 0, 112, 0.4);
   --bg-image: url(../images/cover-image-dark.png);
+  --title-decor-color: #000028;
 }
